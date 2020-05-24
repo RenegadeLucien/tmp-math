@@ -1,0 +1,65 @@
+<html>
+	<head>
+		<title>
+		Trivia Math Party
+		</title>
+	</head>
+	<body>
+	    <div id="mainScreen">
+			<p id="nameDisplay" style="font-size:24px">
+			   Welcome, No Name.
+			</p>
+			<label for="name">Enter name:
+			</label>
+			<input type="text" id="name" name="name">
+			<br>
+			<button type="button" onclick="changeName()" id="nameButton" name="nameButton">
+				Change Name
+			</button>
+			<br>
+			<br>
+			<button type="button" onclick="startGame()" id="startButton" name="startButton" style="font-size:24px">
+				Start
+			</button>
+			<script src="js/app.js">
+			</script>
+			<script src="js/name.js">
+			</script>
+		</div>
+		<div id="gameScreen" style="display:none">
+			<p id="question" style="font-size:36px">
+			</p>
+		    <button type="button" style="width:400px;height:100px;font-size:36px;" id="choice1" name="choice1">
+			</button>
+			<br>
+			<button type="button" style="width:400px;height:100px;font-size:36px;" id="choice2" name="choice2">
+			</button>
+			<br>
+			<button type="button" style="width:400px;height:100px;font-size:36px;" id="choice3" name="choice3">
+			</button>
+			<br>
+			<button type="button" style="width:400px;height:100px;font-size:36px;" id="choice4" name="choice4">
+			</button>
+		</div>
+		<div id="resultsScreen" style="display:none">
+			<p id="correct" style="font-size:24px">
+			0
+			</p>
+			<p id="incorrect" style="font-size:24px">
+			0
+			</p>
+			<p id="accuracy" style="font-size:24px">
+			</p>
+			<p id="grade" style="font-size:24px">
+			</p>
+			<p id="resultText" style="font-size:24px">
+			</p>
+			<button type="button" onclick="startGame()" style="font-size:24px" id="restartButton" name="restartButton">
+				Restart
+			</button>
+			<button type="button" onclick="returnToMain()" style="font-size:24px" id="returnButton" name="returnButton">
+				Return To Main
+			</button>
+		</div>
+	</body>
+</html>
