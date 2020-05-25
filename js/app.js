@@ -14,8 +14,14 @@ function newQuestion() {
 	document.getElementById("choice3").style.display = "inline";
 	document.getElementById("choice4").style.display = "inline";
 	num1 = Math.floor(Math.random()*19)-9;
-	num2 = Math.floor(Math.random()*19)-9;
 	add = Math.floor(Math.random()*2);
+	num2 = 0;
+	if (add) {
+		num2 = Math.floor(Math.random()*19)-9;
+	}
+	else {
+		num2 = Math.floor(Math.random()*10);
+	}
 	correctAnswer = -99;
 	displayString = "";
 	if (add) {
